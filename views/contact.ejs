@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contact Me</title>
+  <style>
+    body {
+      background-image: url('https://img.freepik.com/free-vector/gradient-world-science-day-background_52683-97461.jpg');
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+
+  .nav1 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .nav1 li {
+    margin-right: 15px;
+  }
+
+  .nav1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .nav1 a:hover {
+    color: pink;
+  }
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+    main {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 50px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    @keyframes fade-in {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    h1, h2, p {
+      animation: fade-in 1s ease-in-out;
+    }
+
+    .contact-info {
+      margin-bottom: 40px;
+    }
+
+    .contact-info label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .contact-info p {
+      margin: 0;
+    }
+
+    .contact-info p span {
+      font-weight: bold;
+    }
+
+
+    /* Form Styles */
+    form {
+      margin-top: 40px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .form-button button {
+      background-color: #555;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="section1">
+      <header>
+        <img class="logo" src="https://static.vecteezy.com/system/resources/thumbnails/011/757/767/small_2x/cj-c-j-letter-logo-design-initial-letter-cj-uppercase-monogram-logo-white-color-cj-logo-c-j-design-cj-c-j-vector.jpg" alt="Logo">
+        <nav class="nav1">
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+  </div>
+  
+  <main>
+    <section>
+      <h1 style="text-align: center;">Contact Me</h1>
+      
+      <div class="contact-info">
+        <h2>CJ Portfolio</h2>
+        <p>
+          Welcome to my website! This is a platform to connect and get in touch with me. If you have any questions or would like to discuss a project, feel free to reach out using the contact details below.
+        </p>
+        <p>
+          Email: anncrizzle20@gmail.com<br>
+          Phone: 437-974-0920<br>
+          Address: 24 Highbrook Dr, Scarborough, Ontario, Canada
+        </p>
+      </div>
+      
+
+      <!-- Contact Form -->
+      <form action="/submit" method="post">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div class="form-group">
+          <label for="contactNumber">Contact Number</label>
+          <input type="tel" id="contactNumber" name="contactNumber" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <!--footer -->
+  <%- include('./Partials/footer.ejs') %>
+</body>
+</html>

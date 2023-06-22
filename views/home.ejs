@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio Site</title>
+<link rel="icon" type="image/x-icon" href="https://img.favpng.com/2/22/21/computer-icons-home-page-favicon-website-png-favpng-AERnWJireKVXw5iuftuANf4dA.jpg">
+<style>
+  body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/006/430/145/original/technology-background-concept-circuit-board-electronic-system-futuristic-hi-tech-light-on-dark-blue-free-vector.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+
+  .nav1 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .nav1 li {
+    margin-right: 15px;
+  }
+
+  .nav1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .nav1 a:hover {
+    color: pink;
+  }
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section1 {
+    border: 1px solid black;
+    padding: 20px;
+  }
+
+  .section2 {
+    border: 1px solid black;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .heading {
+    position: relative;
+    animation: slide 3s ease-in-out infinite;
+  }
+
+  @keyframes slide {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 100px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <section class="section1">
+      <header>
+        <img class="logo" src="https://static.vecteezy.com/system/resources/thumbnails/011/757/767/small_2x/cj-c-j-letter-logo-design-initial-letter-cj-uppercase-monogram-logo-white-color-cj-logo-c-j-design-cj-c-j-vector.jpg" alt="Logo">
+        <nav class="nav1">
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+    <section class="section2">
+      <h1 class="heading" style="padding-top: 100px; font-size: 75px; color: white;">Step Into My Creative Journey</h1>
+    </section>
+  </div>
+  <!--footer -->
+  <%- include('./Partials/footer.ejs') %>
+</body>
+</html>

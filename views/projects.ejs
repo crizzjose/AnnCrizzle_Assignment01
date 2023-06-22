@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Projects</title>
+  <style>
+    body {
+      background-image: url('https://img.lovepik.com/background/20211022/large/lovepik-blue-tech-background-image_401948404.jpg');
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+
+  .nav1 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .nav1 li {
+    margin-right: 15px;
+  }
+
+  .nav1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .nav1 a:hover {
+    color: pink;
+  }
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 80px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    .project {
+      margin-bottom: 40px;
+    }
+
+    .project-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .project-description {
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="section1">
+      <header>
+        <img class="logo" src="https://static.vecteezy.com/system/resources/thumbnails/011/757/767/small_2x/cj-c-j-letter-logo-design-initial-letter-cj-uppercase-monogram-logo-white-color-cj-logo-c-j-design-cj-c-j-vector.jpg" alt="Logo">
+        <nav class="nav1">
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+  </div>
+  
+  <main>
+    <section>
+      <h1 style="text-align: center;">Projects</h1>
+      
+      <div class="project">
+        <h2 class="project-title">Website Development</h2>
+        <p class="project-description">
+          Food Ordering System: It was a website called food ordering system where the user can order their favourite food through this website.
+          The primary objective of a food ordering website is to provide a user-friendly platform that allows customers to browse menus, select 
+          food items, customize their orders, and place orders easily and quickly.
+        </p>
+      </div>
+      
+      <div class="project">
+        <h2 class="project-title">Desktop Application</h2>
+        <p class="project-description">
+          Food Management System: This was a desktop application.
+          It the process of food delivery or takeout from a local restaurants or food cooperative through a web page or app. 
+          Much like ordering consumer goods online, many of these services allow customers to keep accounts with them in order 
+          to make frequent ordering convenient. A customer will search for a favorite food, and choose from available items, and
+          choose delivery or pick-up. Payment is can be done through cash on delivery
+      </div>
+    </section>
+  </main>
+  
+  <!--footer -->
+  <%- include('./Partials/footer.ejs') %>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Services Page</title>
+<link rel="icon" type="image/x-icon" href="https://img.favpng.com/2/22/21/computer-icons-home-page-favicon-website-png-favpng-AERnWJireKVXw5iuftuANf4dA.jpg">
+<style>
+  body {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+
+  .nav1 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .nav1 li {
+    margin-right: 15px;
+  }
+
+  .nav1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .nav1 a:hover {
+    color: pink;
+  }
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+  }
+
+  p {
+    padding-left: 300px;
+    color: white;
+    font-size: 25;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Add the desired gap between images */
+    margin-top: 20px; /* Add margin to create a gap from the header */
+  }
+
+  .image-container img {
+    width: 900px;
+    height: 450px;
+  }
+
+  .web-services {
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: black;
+    text-align: center;
+  }
+  .graphic-services {
+    position: absolute;
+    top: 90%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: Black;
+    text-align: center;
+  }
+  .android-services {
+    position: absolute;
+    top: 155%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: black;
+    text-align: center;
+  }
+  
+</style>
+</head>
+<body>
+  <div class="container">
+    <section class="section1">
+      <header>
+        <img class="logo" src="https://static.vecteezy.com/system/resources/thumbnails/011/757/767/small_2x/cj-c-j-letter-logo-design-initial-letter-cj-uppercase-monogram-logo-white-color-cj-logo-c-j-design-cj-c-j-vector.jpg" alt="Logo">
+        <nav class="nav1">
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+  </div>
+  <h1>Our Services</h1>
+  <div class="image-container">
+    <div class="web-services"><b>Web Design</b></div>
+    <img src="https://static.technians.com/wp-content/uploads/2020/02/Guidelines-for-images-of-website-desig-title.jpg" alt="Web Design">
+
+    <div class="graphic-services"><b>Graphic Design</b></div>
+    <img src="https://www.sacredheart.edu/media/shu-media/school-of-communication-media-amp-the-arts/art_design_740x317.jpg" alt="Graphic Design">
+
+    <div class="android-services"><b>Android App Development</b></div>
+    <img src="https://media.licdn.com/dms/image/D5612AQGLYO9xzS7Odg/article-cover_image-shrink_720_1280/0/1657609475245?e=2147483647&v=beta&t=N_M2rNLsVACCrslm9UqFAfC70fnnG6GwRJ3sntzy0s4" alt="Graphic Design">
+  </div>
+  <!--footer -->
+  <footer style="position: fixed; left: 0; bottom: 0; width: 100%; padding: 10px; z-index: 1;color:aliceblue">
+    <p style="margin: 0;">&copy; 2023 CJ Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>

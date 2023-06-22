@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>About Me</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+
+  .nav1 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .nav1 li {
+    margin-right: 15px;
+  }
+
+  .nav1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .nav1 a:hover {
+    color: pink;
+  }
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+    
+
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 40px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      min-height: 500px; 
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+    article {
+      float: right;
+      padding: 20px;
+      width: 100%;
+      background-color: #f1f1f1;
+      height: 700px; /* only for demonstration, should be removed */
+    }
+
+    .profile-photo {
+      max-width: 300px;
+      height: auto;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .resume-button {
+      	display: inline-block;
+        margin-top: 10px;
+        text-align: center;
+        padding: 10px 20px;
+        background-color: grey;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="section1">
+      <header>
+        <img class="logo" src="https://static.vecteezy.com/system/resources/thumbnails/011/757/767/small_2x/cj-c-j-letter-logo-design-initial-letter-cj-uppercase-monogram-logo-white-color-cj-logo-c-j-design-cj-c-j-vector.jpg" alt="Logo">
+        <nav class="nav1">
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+  </div>
+  
+  <main>
+    <section>
+      <h1 style="text-align: center;">About Me</h1>
+      <article>
+        <img src="/assests/images/IMG_20230502_222405_505.jpg" alt="Profile Photo" class="profile-photo">
+        <p>
+          I am a health informatics technology student with a background in software development. I am interested in Frontend programming and have experience with languages such as HTML, CSS, and Python. I am passionate about leveraging technology to improve healthcare systems and patient outcomes.
+        </p>
+        <p>
+          In addition to my programming skills, I have a strong understanding of health informatics principles and practices. I have completed projects that involve data analysis, information management, and developing Android software. I am dedicated to staying up-to-date with the latest advancements in health informatics and incorporating them into my work.
+        </p>
+        <p>
+           I am excited to contribute to this field by creating innovative solutions that enhance the efficiency, accuracy, and accessibility of healthcare information systems.
+        </p>
+        <div class="resume-button">
+          <a href="assests/pdf/Ann co-op Resume.pdf" download>Download Resume</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!--footer -->
+  <footer style="position: fixed; left: 0; bottom: 0; width: 20%; padding: 10px; z-index: 1;color:rgb(14, 14, 15)">
+    <p style="margin: 0;">&copy; 2023 CJ Website. All rights reserved.</p>
+  </footer>
+  
+
+</body>
+</html>
